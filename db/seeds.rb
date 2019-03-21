@@ -88,7 +88,7 @@ cat2.products.create!({
   name:  'Modern Skateboards',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics1.jpg'),
-  quantity: 40,
+  quantity: 0,
   price: 164.49
 })
 
@@ -104,7 +104,7 @@ cat2.products.create!({
   name:  'World\'s Largest Smartwatch',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('electronics3.jpg'),
-  quantity: 32,
+  quantity: 0,
   price: 2_026.29
 })
 
