@@ -1,0 +1,18 @@
+.order-item{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-header{
+  display:flex;
+  flex-flow: column;
+  padding-right: 10%;
+}
+.item-details{
+  display: flex;
+  flex-flow: column;
+  h3{
+    text-decoration: underline;
+  }
+}

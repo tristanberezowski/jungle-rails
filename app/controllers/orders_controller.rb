@@ -2,6 +2,16 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @line_items = @order.line_items 
+    @items = [] #this is the array of purchased products
+    @total = 0;
+    @user = :current_user
+
+    @order.line_items.each do |item|
+      @items << [Product.find(item.product_id), item]
+      @total = @total + item.total_price_cents / 100.00
+    end
+
   end
 
   def create
@@ -46,7 +56,7 @@ class OrdersController < ApplicationController
       product = entry[:product]
       quantity = entry[:quantity]
       order.line_items.new(
-        product: product,
+        product: product_id,
         quantity: quantity,
         item_price: product.price,
         total_price: product.price * quantity

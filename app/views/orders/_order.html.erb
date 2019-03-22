@@ -1,0 +1,17 @@
+<%# item[0] is the product, item[1] is the line item %>
+<header class="item-header">
+  <%# <h3><%= item[0].name </h3> %>
+  <%= image_tag item[0].image.thumb, alt: item[0].name %>
+</header>
+
+<section class="item-details">
+  <h3><%= item[0].name %></h3>
+  <p class="description">
+    <%= item[0].description %>
+  </p>
+  <div class="pricing">
+    <h4>Quantity <%= item[1].quantity%><%=", at "%><%=humanized_money_with_symbol item[0].price %> each</h4>
+    <h4>Total: <%= (item[1].total_price_cents / 100.00).round(2)%></h4>
+  </div>
+
+</section>
