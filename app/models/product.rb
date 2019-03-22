@@ -4,7 +4,6 @@ class Product < ActiveRecord::Base
   mount_uploader :image, ProductImageUploader
 
   belongs_to :category
-  belongs_to :line_items
 
   validates :name, presence: true
   validates :price, presence: true
