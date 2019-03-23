@@ -10,5 +10,8 @@
     <h2 class="order-total">Order Total: <%=humanized_money_with_symbol @total%></h2>
     <h2 class="order-total">Email is: <%=@order.email%></h2>
     <hr>
+    <%= link_to "/orders/#{@order.id}", method: :post do%>
+      <div class="btn btn-primary">Email me a receipt!</div>
+    <% end %>
   </div>
 </section>
