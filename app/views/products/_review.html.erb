@@ -1,0 +1,9 @@
+ <dl class="dl-horizontal">
+  <dt>User Review By </dt>
+  <% @user = User.find(review.user_id) %>
+  <dd><%= @user.first_name %> <%= @user.last_name %></dd>
+  <dt>Description </dt>
+  <dd><%=review.description%></dd>
+  <dt>Rating </dt>
+  <dd><%='★' * review.rating%><%='☆' * (5 - review.rating)%></dd>
+</dl>
