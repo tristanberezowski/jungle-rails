@@ -1,19 +1,27 @@
 # Jungle
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+Tristan Berezowski contributed the following features to this application:
 
+- product is sold out feature
+- admins can view and create all categories
+- user login/registration/logout
+- view order details after payment
+- order receipt is emailed after payment
+- admin security using .env added
+- empty cart does not allow checkout
+- products can be rated and reviewed by users
 
 ## Setup
 
 1. Fork & Clone
 2. Run `bundle install` to install dependencies
 3. Create `config/database.yml` by copying `config/database.example.yml`
-4. Create `config/secrets.yml` by copying `config/secrets.example.yml`
-5. Run `bin/rake db:reset` to create, load and seed db
-6. Create .env file based on .env.example
-7. Sign up for a Stripe account
-8. Put Stripe (test) keys into appropriate .env vars
-9. Run `bin/rails s -b 0.0.0.0` to start the server
+4. Run `bin/rake db:reset` to create, load and seed db
+5. Create .env file based on .env.example
+6. Sign up for a Stripe account
+7. Put Stripe (test) keys into appropriate .env vars
+8. Run `bin/rails s -b 0.0.0.0` to start the server
 
 ## Stripe Testing
 
