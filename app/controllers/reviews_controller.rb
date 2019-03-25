@@ -1,9 +1,6 @@
 class ReviewsController < ApplicationController
   def create
     @review = Review.create(review_params)
-    puts "+++++++++++++++++++++++++++++++++++++++++++"
-    puts @review.inspect
-    puts "+++++++++++++++++++++++++++++++++++++++++++"
 
     if @review.save
       redirect_to :back
