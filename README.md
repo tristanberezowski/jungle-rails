@@ -13,10 +13,13 @@ Tristan Berezowski contributed the following features to this application:
 - products can be rated and reviewed by users
 - automated testing for product creation
 
-## Demo
+## Demo of implemented features
 
-(https://github.com/tristanberezowski/jungle-rails/blob/master/demo.gif)
+[https://github.com/tristanberezowski/jungle-rails/blob/master/demo.gif]
 
+## Tech Stack
+
+###### Rails / Rspec / StripeAPI / HTML ERB / SASS / PostgreSQL / BootStrap
 
 ## Setup
 
