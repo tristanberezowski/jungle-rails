@@ -19,7 +19,8 @@ Tristan Berezowski contributed the following features to this application:
 
 ## Tech Stack
 
-###### Rails / Rspec / StripeAPI / HTML ERB / SASS / PostgreSQL / BootStrap
+###### Rails / StripeAPI / HTML ERB / SASS / PostgreSQL / BootStrap
+###### Rspec / Capybara / Database Cleaner / PhantomJS
 
 ## Setup
 
