@@ -11,6 +11,12 @@ Tristan Berezowski contributed the following features to this application:
 - admin security using .env added
 - empty cart does not allow checkout
 - products can be rated and reviewed by users
+- automated testing for product creation
+
+## Demo
+
+(https://github.com/tristanberezowski/jungle-rails/blob/master/demo.gif)
+
 
 ## Setup
 
