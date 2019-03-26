@@ -15,7 +15,7 @@ Tristan Berezowski contributed the following features to this application:
 
 ## Demo of implemented features
 
-[https://github.com/tristanberezowski/jungle-rails/blob/master/demo.gif]
+![Gif of Jungle Demo](https://github.com/tristanberezowski/jungle-rails/blob/master/demo.gif)
 
 ## Tech Stack
 
