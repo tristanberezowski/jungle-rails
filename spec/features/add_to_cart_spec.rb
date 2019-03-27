@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "ProductDetails", type: :feature, js: true do
+RSpec.feature "add_to_cart button is clicked", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -13,24 +13,14 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
       quantity: 10,
       price: 64.99
     )
-    @category.products.create!(
-      name:  "Bad Shirt",
-      description: Faker::Hipster.paragraph(4),
-      image: open_asset('apparel1.jpg'),
-      quantity: 10,
-      price: 64.99
-    )
   end
 
-  scenario "" do
+  scenario "Cart size in nav bar increases by 1 on button press" do
+    
     visit root_path
-    click_on 'Cool Shirt'
-
-    # commented out b/c it's for debugging only
-    # save_and_open_screenshot
-
-    expect(page.has_css?('dd', text: 'Cool Shirt')).to eq true
-    expect(page.has_css?('dd', text: 'Bad Shirt')).to eq false
+    expect(page.has_css?('a', text: 'My Cart (0)')).to eq true
+    click_on 'Add'
+    expect(page.has_css?('a', text: 'My Cart (1)')).to eq true
 
   end
 end

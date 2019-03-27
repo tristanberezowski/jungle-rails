@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "ProductDetails", type: :feature, js: true do
+RSpec.feature "Visitor clicks on a product to show it", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -22,7 +22,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     )
   end
 
-  scenario "Link to Show Product works and shows only the one product" do
+  scenario "Shows only the one product" do
     visit root_path
     click_on 'Cool Shirt'
 
