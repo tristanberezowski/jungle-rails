@@ -12,7 +12,7 @@ Tristan Berezowski contributed the following features to this application:
 - empty cart does not allow checkout
 - products can be rated and reviewed by users
 - automated testing for product creation model
-- Feature spec testing
+- Feature spec testing with Capybara
 
 ## Demo of implemented features
 
