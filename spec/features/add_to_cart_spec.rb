@@ -22,7 +22,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     )
   end
 
-  scenario "Link to Show Product works and shows only the one product" do
+  scenario "" do
     visit root_path
     click_on 'Cool Shirt'
 
